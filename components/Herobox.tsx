@@ -5,7 +5,7 @@ import React from "react";
 
 interface HeroboxProps {
   imageSide: "left" | "right";
-  imageUrl: StaticImport;
+  imageUrl: StaticImport | string;
   imageAlt: string;
   title: string;
   subtitle?: string;
@@ -47,6 +47,8 @@ export function Herobox({
           src={imageUrl}
           alt={imageAlt}
           className="object-cover w-full h-full"
+          width={900}
+          height={600}
         />
       </div>
     </div>

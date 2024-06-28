@@ -1,19 +1,21 @@
 import { Herobox } from "@/components/Herobox";
-import { content } from "@/lib/content";
 import { ImageCard } from "@/components/ImageCard";
 import { LearnMore } from "@/components/LearnMore";
+import content from "@/public/content.json";
 
 export default function About() {
   return (
     <div>
-      {/* <Herobox
-        content={content.about.herobox.content}
-        imageAlt="Black and white photo of Joseph Benjamin Lawton printing."
+      <Herobox
+        content={content.about.herobox.description}
+        imageAlt="A road running through green fields and hills with snow cappe"
         imageSide="right"
-        imageUrl={Benjamin}
+        imageUrl={
+          "https://images.unsplash.com/photo-1548280210-741c035fad0e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGFib3V0JTIwdXN8ZW58MHx8MHx8fDA%3D"
+        }
         title={content.about.herobox.title}
-      /> */}
-      <section className="h-screen bg-card flex flex-col">
+      />
+      {/* <section className="h-screen bg-card flex flex-col">
         <div className=" bg-warning flex justify-end">
           <div className="w-1/3  flex items-center gap-4 p-10">
             <div className="pr-36">
@@ -28,7 +30,7 @@ export default function About() {
         </div>
         <div className="bg-card flex-1 ">
           <div className="flex w-1/2 mx-auto items-center h-full gap-20">
-            {/* <Image src={WBE} alt="Women Owned Business certificate" /> */}
+            <Image src={WBE} alt="Women Owned Business certificate" />
             <p>
               {content.about.sectionOne.bottom.content.map((p) => (
                 <p key={p}>{p}</p>
@@ -36,23 +38,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </section>
-      <section className="h-screen bg-backround flex flex-col justify-center items-center p-20">
-        <div className="border-b border-border p-4 w-full font-bold text-3xl">
-          <h2>Sister Companies</h2>
-        </div>
-        {/* <ul className="grid grid-cols-3 gap-12 mt-12">
-          {gridItems.map((item) => (
-            <ImageCard
-              imageAlt={item.imageAlt}
-              imageUrl={item.imageUrl}
-              title={item.title}
-              description={item.description}
-              key={item.title}
-            />
-          ))}
-        </ul> */}
-      </section>
+      </section> */}
     </div>
   );
 }

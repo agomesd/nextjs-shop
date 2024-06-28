@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { Facebook } from "lucide-react";
 
 export function Footer() {
   return (
@@ -8,16 +7,15 @@ export function Footer() {
       <div className="p-12 justify-between flex items-center mb-12">
         <div className="flex flex-col gap-8 items-center">
           <Link href={"/"} className="text-4xl font bold">
-            Logo
+            Company Logo
           </Link>
           <div>
-            <p>Address line 1</p>
-            <p>Address line 2</p>
+            <p>1234 City street West,</p>
+            <p>City, Country</p>
           </div>
           <div>
             <p>P: 450-020-2398</p>
             <p>F: 450-020-2398</p>
-            <p>TF: 450-020-2398</p>
           </div>
         </div>
 
@@ -54,9 +52,9 @@ export function Footer() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="lucide lucide-facebook"
             >
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -70,9 +68,9 @@ export function Footer() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="lucide lucide-instagram"
             >
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -88,9 +86,9 @@ export function Footer() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="lucide lucide-linkedin"
             >
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -108,7 +106,7 @@ const footerLinks = [
   {
     link: {
       href: "/about",
-      label: "WHO WE ARE",
+      label: "ABOUT US",
       sublinks: [
         {
           hash: "#our-story",
@@ -122,37 +120,53 @@ const footerLinks = [
           hash: "#core-values",
           label: "Core Values",
         },
+      ],
+    },
+  },
+  {
+    link: {
+      href: "/products",
+      label: "PRODUCTS",
+      sublinks: [
         {
-          hash: "#sister-companies",
-          label: "Sister Companies",
+          hash: "#accessories",
+          label: "Accessories",
+        },
+        {
+          hash: "#clothing",
+          label: "Clothing",
+        },
+        {
+          hash: "#electronics",
+          label: "Electronics",
         },
       ],
     },
   },
   {
     link: {
-      href: "/solutions",
-      label: "SOLUTIONS",
+      href: "/services",
+      label: "SERVICES",
       sublinks: [
         {
-          hash: "#printing",
-          label: "Printing",
+          hash: "#consulting",
+          label: "Consulting",
         },
         {
-          hash: "#wide-format",
-          label: "Wide Format",
+          hash: "#design",
+          label: "Design",
         },
         {
-          hash: "#menu",
-          label: "Menu",
+          hash: "#networking",
+          label: "Networking",
         },
         {
-          hash: "#specialty",
-          label: "Specialty",
+          hash: "#staffing",
+          label: "Staffing",
         },
         {
-          hash: "#fulfillment",
-          label: "Fulfillment",
+          hash: "#training",
+          label: "Training",
         },
       ],
     },
@@ -181,10 +195,6 @@ const footerLinks = [
         {
           hash: "#get-a-quote",
           label: "Get a Quote",
-        },
-        {
-          hash: "#upload-files",
-          label: "Upload Files",
         },
         {
           hash: "#contact-us",

@@ -2,9 +2,17 @@
   "home": {
     "herobox": {
       "title": "Welcome to the home page",
-      "subtitle": "Showcase your products or services with a beautiful hero box.",
-      "content": [
-        "The Earth is a very small stage in a vast cosmic arena. Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot. Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds."
+      "subtitle": "Unlock Your Potential with State-of-the-art Products and Cutting-Edge Solutions.",
+      "description": [
+        "Elevate your online presence and streamline your digital journey with your company. From innovative web applications to tailored services, we empower individuals and businesses to thrive in the digital age. Ready to embark on your digital journey? Explore our offerings and unlock limitless possibilities ."
+      ]
+    }
+  },
+  "about": {
+    "herobox": {
+      "title": "About Us",
+      "description": [
+        "At Our Company, we're driven by a passion for innovation and a commitment to excellence. Established in 2021, we've been at the forefront of empowering individuals and businesses to thrive in the digital landscape."
       ]
     }
   }
